@@ -39,8 +39,9 @@
                             <form action="#">
                                 <b>Стоимость:</b>
                                 <div class="range">
-                                    <span class="range-line"><input type="range" min="0" max="15000" name="range" ></span>
-                                    <p>от <span class="lenght">0</span> до <span class="lenght">15000</span></p>
+                                    <div class="range-line">
+                                    </div>
+                                    <p>от <span class="lenght"><input type="number" name="minprice" value="0"></span> до <span class="lenght"><input type="number" name="maxprice" value="15000"></span></p>
                                 </div>
                                 <b>Сетка:</b>
                                 <div class="grid">
@@ -62,11 +63,11 @@
                         <div class="items">
                             <div class="sorter">
                                 <span>Сортировать:</span>
-                                <span class="sort-type">По цене</span>
-                                <span class="sort-type">По типу</span>
-                                <span class="sort-type">По функционалу</span>
-                                <span class="arrows up"></span>
-                                <span class="arrows down"></span>
+                                <span class="sort-type active"><a href="#">По цене</a></span>
+                                <span class="sort-type"><a href="#">По типу</a></span>
+                                <span class="sort-type"><a href="#">По функционалу</a></span>
+                                <span class="arrows up active"><a href="#"></a></span>
+                                <span class="arrows down"><a href="#"></a></span>
                             </div>
                             <div class="list">
                                 <div class="item">
