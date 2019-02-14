@@ -99,3 +99,88 @@ h1, .index-content-title {
     float: right;
     width: 180px;
 }
+
+.inner-container, .inner-page-nav {
+    margin-bottom: 55px;
+}
+
+.inner-container .menu {
+    float: left;
+    width: 780px;
+}
+
+.inner-single-item {
+    padding-bottom: 50px;
+}
+
+.inner-single-item .images {
+    float: left;
+    widows: 480px;
+}
+
+.inner-single-item .images-main-photo {
+    margin-bottom: 20px;
+}
+
+.inner-single-item .images-thumbs img {
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+}
+
+.inner-single-item .images-thumbs img:last-child {
+    margin-right: 0;
+}
+
+.inner-single-item .item-text {
+    float: left;
+    margin-left: 70px;
+    width: 390px;
+}
+
+.head-text span:first-child {
+    float: left;
+    width: 150px;
+}
+
+.head-text span:last-child {
+    float: right;
+    width: 220px;
+}
+
+.inner-items-filter {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.inner-items-list {
+    float: right; 
+    width: 700px;
+}
+
+.inner-items-cards {
+    margin-bottom: 20px;
+}
+
+.inner-items-cards:last-child {
+    margin-bottom: 45px;
+}
+
+.inner-items-cards .card {
+    float: left;
+    width: 220px;
+    margin-left: 20px;
+}
+
+.inner-items-cards .card:first-child {
+    margin-left: 0;
+}
+
+.inner-items {
+    padding-bottom: 50px;
+}
+
+.inner-items-filter fieldset {
+    margin-bottom: 45px;
+}

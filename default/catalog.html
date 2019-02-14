@@ -7,25 +7,27 @@
 </head>
 <body>
     <header class="inner-container">
-        <div class="container">
-            <div class="inner-header-logo">
-                <a href="#"><img src="img/logo.png" alt="Барбершоп" width="111" height="24"></a>
+        <div class="container clearfix">
+            <div class="menu">
+                <div class="inner-header-logo">
+                    <a href="#"><img src="img/logo.png" alt="Барбершоп" width="111" height="24"></a>
+                </div>
+                <nav class="inner-navigation">
+                    <ul>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li class="selected"><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="inner-navigation">
-                <ul>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
-                    <li class="selected"><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav> 
             <div class="user-block">
                 <a href="#" class="login">Вход</a>
             </div>    
         </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
         <div class="inner-page-nav">
             <h1>Средства для ухода</h1>
             <ul class="breadcrumbs">
@@ -34,7 +36,7 @@
                 <li class="selected">Средства для ухода</li>
             </ul>
         </div>
-        <section class="inner-items">
+        <section class="inner-items clearfix">
             <div class="inner-items-filter">
                 <form action="#">
                     <fieldset>
@@ -56,7 +58,7 @@
                 </form>
             </div>
             <div class="inner-items-list">
-                <div class="inner-items-cards">
+                <div class="inner-items-cards clearfix">
                     <div class="card">
                         <img src="img/cart-1.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -68,8 +70,6 @@
                         <span class="price">2900 руб.</span>
                         <a hreh="#" class="btn add-to-basket">Купить</a>
                     </div>
-                </div>
-                <div class="inner-items-cards">
                     <div class="card">
                         <img src="img/cart-2.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -81,8 +81,6 @@
                         <span class="price">750 руб.</span>
                         <a hreh="#" class="btn add-to-basket">Купить</a>
                     </div>
-                </div>
-                <div class="inner-items-cards">
                     <div class="card">
                         <img src="img/cart-3.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -95,7 +93,7 @@
                         <a hreh="#" class="btn add-to-basket">Купить</a>
                     </div>
                 </div>
-                <div class="inner-items-cards">
+                <div class="inner-items-cards clearfix">
                     <div class="card">
                         <img src="img/cart-4.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -107,8 +105,6 @@
                         <span class="price">500 руб.</span>
                         <a hreh="#" class="btn add-to-basket">Купить</a>
                     </div>
-                </div>
-                <div class="inner-items-cards">
                     <div class="card">
                         <img src="img/cart-5.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -120,8 +116,6 @@
                         <span class="price">300 руб.</span>
                         <a hreh="#" class="btn add-to-basket">Купить</a>
                     </div>
-                </div>
-                <div class="inner-items-cards">
                     <div class="card">
                         <img src="img/cart-6.jpg" alt="Товар" width="220" height="165">
                         <div>
@@ -136,17 +130,17 @@
                 </div>
                 <div class="inner-items-pagination">
                     <ul>
-                        <li>1</li>
+                        <li><a href="">1</a></li>
                         <li class="selected">2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
     <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <section class="footer-contacts">
                 Барбершоп «Бородинский»<br />
                 Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br />
