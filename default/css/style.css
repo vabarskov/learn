@@ -1,19 +1,17 @@
 body {
-    font-family: "PTSans", "NarrowBold", "Arial", serif;
+    min-width: 960px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 14px;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
     line-height: 24px;
+    background: #000 url('../img/main-bg.jpg') no-repeat center top;
+    margin: 0;
 }
 
 h1, .index-content-title {    
     font-size: 30px;
-}
-
-.feature-name {
-    font-size: 30px;
-    color: white;
 }
 
 .container {
@@ -32,20 +30,82 @@ h1, .index-content-title {
     float: left;
 }
 
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 25px 20px;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .user-block {
-    width: 140px;
+    max-width: 140px;
     float: right;
+}
+
+
+.user-block a.login {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 20px 25px 50px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.user-block a.login:hover {
+    background-color: #242424;    
+}
+
+.user-block a.login::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background: transparent url('../img/sprite.png') -94px -10px no-repeat;
+    top: 28px;
+    left: 20px;
+    opacity: 0.3;
+}
+
+.user-block a.login:hover::before {
+    opacity: 1;
 }
 
 .main-header {
     margin-bottom: 60px;
+    color: #fff;
+    background-color: #000;
 }
 
 .index-logo {
-    width: 204px;
     width: 368px;
+    height: 204px;
     margin: 0 auto;
     margin-bottom: 25px;
+}
+.index-logo img {
+    width: 368px;
+    height: 204px;
 }
 
 .features {
@@ -56,15 +116,51 @@ h1, .index-content-title {
     width: 300px;
     float: left;
     margin-right: 20px;
+    text-align: center;
 }
-
 .features-item:last-child {
     margin-right: 0;
+}
+
+.feature-name {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+}
+
+.feature-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
 }
 
 .index-content {
     padding: 50px 80px;
     margin-bottom: 35px;
+    color: #000;
+    background: url(../img/bg-shadow.png) no-repeat center, #f8f5f2 url(../img/main-block-bg.jpg);
+}
+
+.index-content-title {
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .index-content-left {
@@ -77,10 +173,131 @@ h1, .index-content-title {
     width: 300px
 }
 
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    list-style: none;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview  li {
+    margin-bottom: 25px;
+}
+
+.news-preview time {
+    text-transform: none;
+    font-weight: normal;
+}
+
+.btn {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    margin-right: 16px;
+}
+
+.btn:active, 
+.btn:hover {    
+    background-color: #663d15;
+}
+
+.btn.disabled, 
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover, 
+.btn:disabled:hover {
+    background-color: #000;
+}
+
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 140px;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    background-color: #f9f6f3;
+    border: 2px solid black;
+    outline: none;
+    text-transform: inherit;
+    font: inherit;
+    color: #000;
+    font-weight: inherit;
+    width: 106px;
+    padding: 7px 15px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.appointment-form input:focus {
+    border-color: #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;
     padding-bottom: 40px;
+    background: #222222 url(../img/footer-bg.jpg);
 }
 
 
@@ -90,14 +307,83 @@ h1, .index-content-title {
     margin-right: 60px;
 }
 
+.footer-contacts a {
+    color: #fff;
+} 
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
 .footer-social {
     float: left;
     width: 180px;
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    background: #000 url(../img/sprite.png) no-repeat center;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    /* transition: background-position 0.5s, background-color 0.5s; */
+}
+
+.social-btn:hover {
+    background: #fff url(../img/sprites-black.png);
+}
+
+.social-btn-vk {
+    background-position: -1px -39px;
+}
+
+.social-btn-fb {
+    background-position: -79px -36px;
+}
+
+.social-btn-inst {
+    background-position: -42px -0px;
+}
+
+.social-btn-vk:hover {
+    background-position: -43px 3px;
+}
+
+.social-btn-fb:hover {
+    background-position: 5px -41px;
+}
+
+.social-btn-inst:hover {
+    background-position: 2px 0px;
 }
 
 .footer-copyright {
     float: right;
-    width: 180px;
+    max-width: 180px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #000;
+    background: #fff;
 }
 
 .inner-container, .inner-page-nav {
